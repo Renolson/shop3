@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Sample Store - Sri Lanka</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for star icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .star-rating .fas {
+            color: #FFD700; /* Gold color for stars */
+        }
+        /* Custom Tailwind configuration to use green as primary */
+        :root {
+            --color-primary-600: #16A34A; /* Tailwind green-600 */
+            --color-primary-700: #15803D; /* Tailwind green-700 */
+            --color-primary-50: #F0FDF4; /* Tailwind green-50 */
+            --color-primary-200: #BBF7D0; /* Tailwind green-200 */
+        }
+        .bg-indigo-600 { background-color: var(--color-primary-600); }
+        .hover\:bg-indigo-700:hover { background-color: var(--color-primary-700); }
+        .text-indigo-600 { color: var(--color-primary-600); }
+        .hover\:text-indigo-600:hover { color: var(--color-primary-600); }
+        .hover\:bg-indigo-50:hover { background-color: var(--color-primary-50); }
+        .border-indigo-200 { border-color: var(--color-primary-200); }
+    </style>
+</head>
+<body class="bg-gray-100 p-4">
+    <div class="container mx-auto bg-white rounded-lg shadow-lg p-6 md:p-8">
+        <header class="text-center mb-8">
+            <h1 class="text-4xl font-bold text-gray-800 mb-2">My Sample Store - Sri Lanka 🇱🇰</h1>
+            <p class="text-lg text-gray-600">Discover great products across Sri Lanka!</p>
+        </header>
+
+        <!-- Categories Navigation -->
+        <nav class="mb-10">
+            <ul class="flex flex-wrap justify-center space-x-4 md:space-x-8 text-lg font-medium text-gray-700">
+                <li><a href="#electronics" class="hover:text-indigo-600 transition duration-200 ease-in-out py-2 px-3 rounded-md hover:bg-indigo-50">Electronics</a></li>
+                <li><a href="#home-appliances" class="hover:text-indigo-600 transition duration-200 ease-in-out py-2 px-3 rounded-md hover:bg-indigo-50">Home Appliances</a></li>
+                <li><a href="#fashion" class="hover:text-indigo-600 transition duration-200 ease-in-out py-2 px-3 rounded-md hover:bg-indigo-50">Fashion</a></li>
+                <li><a href="#accessories" class="hover:text-indigo-600 transition duration-200 ease-in-out py-2 px-3 rounded-md hover:bg-indigo-50">Accessories</a></li>
+                <li><a href="#kids" class="hover:text-indigo-600 transition duration-200 ease-in-out py-2 px-3 rounded-md hover:bg-indigo-50">Kids</a></li>
+                <li><a href="#books" class="hover:text-indigo-600 transition duration-200 ease-in-out py-2 px-3 rounded-md hover:bg-indigo-50">Books</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <!-- Electronics Category -->
+            <section id="electronics" class="mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center border-b-2 border-indigo-200 pb-3">Electronics</h2>
+                <div id="electronics-products" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                    <!-- Products will be dynamically inserted here -->
+                </div>
+            </section>
+
+            <!-- Home Appliances Category -->
+            <section id="home-appliances" class="mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center border-b-2 border-indigo-200 pb-3">Home Appliances</h2>
+                <div id="home-appliances-products" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                    <!-- Products will be dynamically inserted here -->
+                </div>
+            </section>
+
+            <!-- Fashion Category -->
+            <section id="fashion" class="mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center border-b-2 border-indigo-200 pb-3">Fashion</h2>
+                <div id="fashion-products" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                    <!-- Products will be dynamically inserted here -->
+                </div>
+            </section>
+
+            <!-- Accessories Category -->
+            <section id="accessories" class="mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center border-b-2 border-indigo-200 pb-3">Accessories</h2>
+                <div id="accessories-products" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                    <!-- Products will be dynamically inserted here -->
+                </div>
+            </section>
+
+            <!-- Kids Category -->
+            <section id="kids" class="mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center border-b-2 border-indigo-200 pb-3">Kids</h2>
+                <div id="kids-products" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                    <!-- Products will be dynamically inserted here -->
+                </div>
+            </section>
+
+            <!-- Books Category -->
+            <section id="books" class="mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center border-b-2 border-indigo-200 pb-3">Books</h2>
+                <div id="books-products" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                    <!-- Products will be dynamically inserted here -->
+                </div>
+            </section>
+        </main>
+
+        <footer class="text-center mt-12 text-gray-600 text-sm border-t border-gray-200 pt-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Customer Support</h3>
+                    <p>Email: support@mysamplestore.lk</p>
+                    <p>Phone: +94 11 234 5678</p>
+                    <p>WhatsApp: +94 77 123 4567</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Delivery Information</h3>
+                    <p>Island-wide delivery available.</p>
+                    <p>Standard Delivery: 3-5 business days</p>
+                    <p>Express Delivery: 1-2 business days (additional charges apply)</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Quick Links</h3>
+                    <ul>
+                        <li><a href="#" class="hover:text-indigo-600">About Us</a></li>
+                        <li><a href="#" class="hover:text-indigo-600">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-indigo-600">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p>&copy; 2025 My Sample Store. All rights reserved.</p>
+            <p>Made with ❤️ in Sri Lanka</p>
+        </footer>
+    </div>
+
+    <script>
+        // Function to generate star icons based on rating
+        function getStarRatingHtml(rating) {
+            let starsHtml = '';
+            for (let i = 1; i <= 5; i++) {
+                if (rating >= i) {
+                    starsHtml += '<i class="fas fa-star"></i>';
+                } else if (rating > i - 1 && rating < i) {
+                    starsHtml += '<i class="fas fa-star-half-alt"></i>';
+                } else {
+                    starsHtml += '<i class="far fa-star"></i>';
+                }
+            }
+            return starsHtml;
+        }
+
+        // Product data array
+        const products = [
+            // Electronics
+            { category: 'electronics', name: 'Wireless Headphones', description: 'Experience immersive sound with these comfortable wireless headphones.', price: 15999, oldPrice: 19999, shipping: 450, rating: 4.5, reviews: 120, location: 'Colombo', imageText: 'Wireless+Headphones' },
+            { category: 'electronics', name: 'Smart Fitness Watch', description: 'Track your health and stay connected with this sleek smartwatch.', price: 28500, oldPrice: 32000, shipping: 500, rating: 4.0, reviews: 85, location: 'Kandy', imageText: 'Smart+Fitness+Watch' },
+            { category: 'electronics', name: 'Portable Bluetooth Speaker', description: 'Enjoy your music anywhere with this powerful and compact speaker.', price: 9999, oldPrice: 12000, shipping: 300, rating: 3.5, reviews: 150, location: 'Galle', imageText: 'Portable+Bluetooth+Speaker' },
+            { category: 'electronics', name: 'Ergonomic Wireless Mouse', description: 'Work comfortably all day with this precision ergonomic mouse.', price: 5500, oldPrice: 6500, shipping: 250, rating: 5.0, reviews: 200, location: 'Jaffna', imageText: 'Ergonomic+Wireless+Mouse' },
+            { category: 'electronics', name: 'High-Performance Gaming Laptop', description: 'Unleash your gaming potential with this powerful laptop.', price: 250000, oldPrice: 280000, shipping: 1500, rating: 4.5, reviews: 60, location: 'Colombo', imageText: 'High-Performance+Gaming+Laptop' },
+            { category: 'electronics', name: '55-inch 4K LED Smart TV', description: 'Enjoy stunning visuals and smart features with this TV.', price: 120000, oldPrice: 135000, shipping: 1000, rating: 4.0, reviews: 90, location: 'Negombo', imageText: '55-inch+4K+LED+Smart+TV' },
+            { category: 'electronics', name: '10000mAh Power Bank', description: 'Keep your devices charged on the go with this high-capacity power bank.', price: 4999, oldPrice: 5500, shipping: 200, rating: 5.0, reviews: 180, location: 'Batticaloa', imageText: '10000mAh+Power+Bank' },
+            { category: 'electronics', name: 'Noise-Cancelling Earbuds', description: 'Immerse yourself in pure sound with these advanced earbuds.', price: 18000, oldPrice: 20000, shipping: 400, rating: 4.5, reviews: 95, location: 'Kandy', imageText: 'Noise-Cancelling+Earbuds' },
+            { category: 'electronics', name: 'Portable SSD 1TB', description: 'Ultra-fast external storage for all your files.', price: 22000, oldPrice: 25000, shipping: 350, rating: 4.0, reviews: 70, location: 'Galle', imageText: 'Portable+SSD+1TB' },
+            { category: 'electronics', name: 'Wireless Charging Pad', description: 'Convenient and fast wireless charging for your compatible devices.', price: 3500, oldPrice: 4000, shipping: 150, rating: 4.5, reviews: 110, location: 'Colombo', imageText: 'Wireless+Charging+Pad' },
+
+            // Home Appliances
+            { category: 'home-appliances', name: 'Automatic Coffee Maker', description: 'Brew perfect coffee every morning with ease.', price: 18000, oldPrice: 20000, shipping: 600, rating: 4.0, reviews: 75, location: 'Gampaha', imageText: 'Automatic+Coffee+Maker' },
+            { category: 'home-appliances', name: 'Smart Digital Air Fryer', description: 'Cook healthier meals with less oil using this smart air fryer.', price: 22500, oldPrice: 25000, shipping: 700, rating: 4.5, reviews: 110, location: 'Matara', imageText: 'Smart+Digital+Air+Fryer' },
+            { category: 'home-appliances', name: 'Robotic Vacuum Cleaner', description: 'Keep your home spotless with this intelligent robotic vacuum.', price: 35000, oldPrice: 40000, shipping: 800, rating: 4.0, reviews: 95, location: 'Kurunegala', imageText: 'Robotic+Vacuum+Cleaner' },
+            { category: 'home-appliances', name: 'High-Speed Power Blender', description: 'Prepare smoothies and shakes effortlessly with this powerful blender.', price: 11500, oldPrice: 13000, shipping: 400, rating: 3.5, reviews: 65, location: 'Batticaloa', imageText: 'High-Speed+Power+Blender' },
+            { category: 'home-appliances', name: 'Smart Inverter Refrigerator', description: 'Modern refrigerator with smart features and energy efficiency.', price: 180000, oldPrice: 200000, shipping: 2500, rating: 5.0, reviews: 45, location: 'Colombo', imageText: 'Smart+Inverter+Refrigerator' },
+            { category: 'home-appliances', name: 'Microwave Oven with Grill', description: 'Versatile microwave for quick heating and grilling.', price: 15000, oldPrice: 17000, shipping: 550, rating: 4.0, reviews: 80, location: 'Kandy', imageText: 'Microwave+Oven+with+Grill' },
+            { category: 'home-appliances', name: 'Automatic Washing Machine', description: 'Efficient and large capacity washing machine for your laundry needs.', price: 75000, oldPrice: 85000, shipping: 1200, rating: 4.5, reviews: 50, location: 'Galle', imageText: 'Automatic+Washing+Machine' },
+            { category: 'home-appliances', name: 'Electric Kettle (1.7L)', description: 'Boil water quickly and safely for your hot beverages.', price: 3000, oldPrice: 3500, shipping: 200, rating: 4.0, reviews: 130, location: 'Jaffna', imageText: 'Electric+Kettle+1.7L' },
+            { category: 'home-appliances', name: 'Stand Mixer (5L)', description: 'Powerful stand mixer for all your baking and cooking needs.', price: 28000, oldPrice: 30000, shipping: 750, rating: 4.5, reviews: 60, location: 'Colombo', imageText: 'Stand+Mixer+5L' },
+            { category: 'home-appliances', name: 'Water Purifier', description: 'Ensure clean and safe drinking water for your family.', price: 19000, oldPrice: 21000, shipping: 650, rating: 4.0, reviews: 70, location: 'Negombo', imageText: 'Water+Purifier' },
+
+            // Fashion
+            { category: 'fashion', name: 'Men\'s Linen Casual Shirt', description: 'Comfortable and stylish linen shirt for everyday wear.', price: 4500, oldPrice: 5200, shipping: 200, rating: 3.5, reviews: 130, location: 'Galle', imageText: 'Mens+Linen+Casual+Shirt' },
+            { category: 'fashion', name: 'Elegant Summer Dress', description: 'Lightweight and breathable dress perfect for warm weather.', price: 6800, oldPrice: 7500, shipping: 200, rating: 4.0, reviews: 105, location: 'Colombo', imageText: 'Elegant+Summer+Dress' },
+            { category: 'fashion', name: 'Comfortable Unisex Sneakers', description: 'Stylish and comfortable sneakers for everyday casual wear.', price: 8900, oldPrice: 10000, shipping: 300, rating: 4.5, reviews: 98, location: 'Kandy', imageText: 'Comfortable+Unisex+Sneakers' },
+            { category: 'fashion', name: 'Premium Leather Handbag', description: 'A chic and spacious handbag for all occasions.', price: 15000, oldPrice: 17000, shipping: 350, rating: 4.5, reviews: 70, location: 'Colombo', imageText: 'Premium+Leather+Handbag' },
+            { category: 'fashion', name: 'Classic Men\'s Polo Shirt', description: 'Timeless polo shirt for a smart casual look.', price: 3200, oldPrice: 3800, shipping: 180, rating: 4.0, reviews: 110, location: 'Matara', imageText: 'Classic+Mens+Polo+Shirt' },
+            { category: 'fashion', name: 'Women\'s Denim Jeans', description: 'Comfortable and stylish denim jeans with a perfect fit.', price: 5500, oldPrice: 6200, shipping: 250, rating: 4.0, reviews: 90, location: 'Kurunegala', imageText: 'Womens+Denim+Jeans' },
+            { category: 'fashion', name: 'Sports Running Shoes', description: 'Lightweight and supportive shoes for your running sessions.', price: 9500, oldPrice: 11000, shipping: 300, rating: 4.5, reviews: 85, location: 'Jaffna', imageText: 'Sports+Running+Shoes' },
+            { category: 'fashion', name: 'Kids\' School Uniform Set', description: 'Durable and comfortable school uniform for daily wear.', price: 3000, oldPrice: 3500, shipping: 200, rating: 4.0, reviews: 60, location: 'Gampaha', imageText: 'Kids+School+Uniform+Set' },
+            { category: 'fashion', name: 'Unisex Hoodie', description: 'Soft and warm hoodie perfect for cooler evenings.', price: 4800, oldPrice: 5500, shipping: 220, rating: 4.5, reviews: 75, location: 'Batticaloa', imageText: 'Unisex+Hoodie' },
+            { category: 'fashion', name: 'Women\'s Casual Blouse', description: 'Elegant and comfortable blouse for a relaxed style.', price: 3900, oldPrice: 4500, shipping: 180, rating: 4.0, reviews: 80, location: 'Negombo', imageText: 'Womens+Casual+Blouse' },
+
+            // Accessories
+            { category: 'accessories', name: 'Durable Laptop Backpack', description: 'Carry your essentials safely with this stylish and durable backpack.', price: 12500, oldPrice: 14000, shipping: 350, rating: 4.5, reviews: 80, location: 'Colombo', imageText: 'Durable+Laptop+Backpack' },
+            { category: 'accessories', name: 'Premium Stylish Sunglasses', description: 'Protect your eyes with these fashionable UV-protected sunglasses.', price: 7200, oldPrice: 8000, shipping: 180, rating: 4.0, reviews: 55, location: 'Nuwara Eliya', imageText: 'Premium+Stylish+Sunglasses' },
+            { category: 'accessories', name: 'Genuine Leather Wallet', description: 'A classic and durable wallet for everyday use.', price: 3500, oldPrice: 4000, shipping: 100, rating: 4.5, reviews: 115, location: 'Trincomalee', imageText: 'Genuine+Leather+Wallet' },
+            { category: 'accessories', name: 'Smartwatch Bands (Set of 3)', description: 'Change your smartwatch style with these colorful bands.', price: 2500, oldPrice: 3000, shipping: 120, rating: 4.0, reviews: 40, location: 'Kandy', imageText: 'Smartwatch+Bands+Set+of+3' },
+            { category: 'accessories', name: 'Travel Adapter Kit', description: 'All-in-one adapter for international travel.', price: 4000, oldPrice: 4500, shipping: 150, rating: 4.5, reviews: 60, location: 'Galle', imageText: 'Travel+Adapter+Kit' },
+            { category: 'accessories', name: 'Portable Mini Fan', description: 'Stay cool on the go with this compact and powerful mini fan.', price: 1800, oldPrice: 2000, shipping: 80, rating: 3.5, reviews: 90, location: 'Colombo', imageText: 'Portable+Mini+Fan' },
+            { category: 'accessories', name: 'Smartphone Tripod Stand', description: 'Capture stable photos and videos with your smartphone.', price: 2200, oldPrice: 2500, shipping: 100, rating: 4.0, reviews: 70, location: 'Jaffna', imageText: 'Smartphone+Tripod+Stand' },
+            { category: 'accessories', name: 'Wireless Earbud Case', description: 'Protective and stylish case for your wireless earbuds.', price: 1200, oldPrice: 1500, shipping: 70, rating: 4.0, reviews: 50, location: 'Matara', imageText: 'Wireless+Earbud+Case' },
+            { category: 'accessories', name: 'Reusable Shopping Bag', description: 'Eco-friendly and durable bag for your groceries.', price: 500, oldPrice: 600, shipping: 50, rating: 4.5, reviews: 200, location: 'Kurunegala', imageText: 'Reusable+Shopping+Bag' },
+            { category: 'accessories', name: 'Car Phone Holder', description: 'Securely mount your phone in your car for navigation.', price: 1900, oldPrice: 2200, shipping: 90, rating: 4.0, reviews: 80, location: 'Gampaha', imageText: 'Car+Phone+Holder' },
+
+            // Kids
+            { category: 'kids', name: 'Kids\' Cotton T-Shirt', description: 'Soft and comfortable cotton t-shirt for kids.', price: 1500, oldPrice: 1800, shipping: 150, rating: 5.0, reviews: 70, location: 'Anuradhapura', imageText: 'Kids+Cotton+T-Shirt' },
+            { category: 'kids', name: 'Educational Building Blocks', description: 'Stimulate creativity and learning with these colorful building blocks.', price: 3000, oldPrice: 3500, shipping: 200, rating: 4.5, reviews: 100, location: 'Colombo', imageText: 'Educational+Building+Blocks' },
+            { category: 'kids', name: 'Children\'s Story Book Set', description: 'A collection of enchanting stories for young readers.', price: 2500, oldPrice: 2800, shipping: 100, rating: 4.5, reviews: 120, location: 'Kandy', imageText: 'Childrens+Story+Book+Set' },
+            { category: 'kids', name: 'Remote Control Car', description: 'Exciting remote control car for endless hours of fun.', price: 4500, oldPrice: 5000, shipping: 250, rating: 4.0, reviews: 80, location: 'Galle', imageText: 'Remote+Control+Car' },
+            { category: 'kids', name: 'Plush Stuffed Animal', description: 'Soft and cuddly companion for your little one.', price: 1800, oldPrice: 2000, shipping: 100, rating: 5.0, reviews: 150, location: 'Jaffna', imageText: 'Plush+Stuffed+Animal' },
+            { category: 'kids', name: 'Kids\' Art Supplies Kit', description: 'Everything your child needs to express their artistic talent.', price: 2200, oldPrice: 2500, shipping: 150, rating: 4.5, reviews: 90, location: 'Matara', imageText: 'Kids+Art+Supplies+Kit' },
+            { category: 'kids', name: 'Baby Carrier (Ergonomic)', description: 'Comfortable and safe carrier for parents and babies.', price: 8000, oldPrice: 9000, shipping: 300, rating: 4.0, reviews: 50, location: 'Colombo', imageText: 'Baby+Carrier+Ergonomic' },
+            { category: 'kids', name: 'Kids\' Bicycle (16-inch)', description: 'Perfect first bicycle for young adventurers.', price: 15000, oldPrice: 17000, shipping: 800, rating: 4.5, reviews: 40, location: 'Negombo', imageText: 'Kids+Bicycle+16-inch' },
+            { category: 'kids', name: 'Educational Tablet for Kids', description: 'Interactive learning tablet with pre-loaded educational games.', price: 12000, oldPrice: 13500, shipping: 400, rating: 4.0, reviews: 30, location: 'Gampaha', imageText: 'Educational+Tablet+for+Kids' },
+            { category: 'kids', name: 'Wooden Puzzle Set', description: 'Classic wooden puzzles to develop problem-solving skills.', price: 1000, oldPrice: 1200, shipping: 80, rating: 5.0, reviews: 100, location: 'Kurunegala', imageText: 'Wooden+Puzzle+Set' },
+
+            // Books
+            { category: 'books', name: 'Bestselling Fiction Novel', description: 'An engaging story that will keep you captivated from start to finish.', price: 1200, oldPrice: 1500, shipping: 100, rating: 5.0, reviews: 250, location: 'Colombo', imageText: 'Bestselling+Fiction+Novel' },
+            { category: 'books', name: 'Transform Your Life: A Self-Help Guide', description: 'Practical advice and insights for personal growth and well-being.', price: 950, oldPrice: 1100, shipping: 100, rating: 3.5, reviews: 90, location: 'Kandy', imageText: 'Transform+Your+Life+Self-Help+Guide' },
+            { category: 'books', name: 'Sri Lankan History Book', description: 'Comprehensive guide to the rich history of Sri Lanka.', price: 1800, oldPrice: 2000, shipping: 120, rating: 4.5, reviews: 70, location: 'Galle', imageText: 'Sri+Lankan+History+Book' },
+            { category: 'books', name: 'Cookbook: Authentic Sri Lankan Cuisine', description: 'Learn to cook traditional Sri Lankan dishes with easy-to-follow recipes.', price: 1500, oldPrice: 1700, shipping: 100, rating: 5.0, reviews: 180, location: 'Jaffna', imageText: 'Cookbook+Authentic+Sri+Lankan+Cuisine' },
+            { category: 'books', name: 'Children\'s Picture Dictionary', description: 'A fun and interactive dictionary for young learners.', price: 800, oldPrice: 950, shipping: 80, rating: 4.0, reviews: 110, location: 'Matara', imageText: 'Childrens+Picture+Dictionary' },
+            { category: 'books', name: 'Fantasy Series: The Dragon\'s Legacy (Book 1)', description: 'Embark on an epic adventure in a world of magic and mythical creatures.', price: 1300, oldPrice: 1600, shipping: 100, rating: 4.5, reviews: 140, location: 'Colombo', imageText: 'Fantasy+Series+The+Dragons+Legacy+Book+1' },
+            { category: 'books', name: 'Academic Textbook: Advanced Physics', description: 'In-depth coverage of advanced physics concepts for university students.', price: 4000, oldPrice: 4500, shipping: 200, rating: 4.0, reviews: 25, location: 'Negombo', imageText: 'Academic+Textbook+Advanced+Physics' },
+            { category: 'books', name: 'Travel Guide: Explore Sri Lanka', description: 'Your ultimate companion for discovering the wonders of Sri Lanka.', price: 1100, oldPrice: 1300, shipping: 90, rating: 4.5, reviews: 95, location: 'Anuradhapura', imageText: 'Travel+Guide+Explore+Sri+Lanka' },
+            { category: 'books', name: 'Biography: Life of a Visionary', description: 'Inspiring true story of a groundbreaking individual.', price: 1600, oldPrice: 1900, shipping: 110, rating: 4.0, reviews: 60, location: 'Gampaha', imageText: 'Biography+Life+of+a+Visionary' },
+            { category: 'books', name: 'Poetry Collection: Whispers of the Soul', description: 'A beautiful collection of poems exploring themes of love and life.', price: 700, oldPrice: 850, shipping: 70, rating: 4.5, reviews: 50, location: 'Batticaloa', imageText: 'Poetry+Collection+Whispers+of+the+Soul' },
+        ];
+
+        // Duplicate products to reach over 100
+        const allProducts = [];
+        for (let i = 0; i < 6; i++) { // Duplicate the initial set 6 times to get 60 products
+            allProducts.push(...products);
+        }
+        // Add more unique products or continue duplicating until over 100
+        // For simplicity, let's just duplicate the existing set enough times
+        while (allProducts.length < 100) {
+            allProducts.push(...products.slice(0, 10)); // Add a subset to reach 100+
+        }
+        // Shuffle the products to mix them up
+        allProducts.sort(() => Math.random() - 0.5);
+
+
+        // Function to render products
+        function renderProducts() {
+            const electronicsContainer = document.getElementById('electronics-products');
+            const homeAppliancesContainer = document.getElementById('home-appliances-products');
+            const fashionContainer = document.getElementById('fashion-products');
+            const accessoriesContainer = document.getElementById('accessories-products');
+            const kidsContainer = document.getElementById('kids-products');
+            const booksContainer = document.getElementById('books-products');
+
+            // Clear existing products
+            electronicsContainer.innerHTML = '';
+            homeAppliancesContainer.innerHTML = '';
+            fashionContainer.innerHTML = '';
+            accessoriesContainer.innerHTML = '';
+            kidsContainer.innerHTML = '';
+            booksContainer.innerHTML = '';
+
+            allProducts.forEach(product => {
+                const productCardHtml = `
+                    <div class="product-card bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden p-4 flex flex-col items-center transform hover:scale-105 transition duration-300">
+                        <img src="https://placehold.co/300x200/D1FAE5/059669?text=${product.imageText}" alt="${product.name}" class="w-full h-48 object-cover rounded-md mb-4">
+                        <h2 class="product-name text-xl font-semibold text-gray-900 mb-2 text-center">${product.name}</h2>
+                        <p class="product-description text-gray-700 text-center mb-3 text-sm">${product.description}</p>
+                        <div class="flex items-baseline mb-2">
+                            <span class="product-price text-2xl font-bold text-indigo-600">LKR ${product.price.toLocaleString()}</span>
+                            ${product.oldPrice ? `<span class="product-old-price text-sm text-gray-500 line-through ml-2">LKR ${product.oldPrice.toLocaleString()}</span>` : ''}
+                        </div>
+                        <p class="product-shipping text-gray-600 text-xs mb-2">Shipping: LKR ${product.shipping.toLocaleString()}</p>
+                        <div class="product-reviews flex items-center mb-4">
+                            <div class="star-rating text-yellow-400">
+                                ${getStarRatingHtml(product.rating)}
+                            </div>
+                            <span class="text-gray-600 text-sm ml-2">(${product.reviews} Reviews)</span>
+                        </div>
+                        <p class="product-location text-gray-600 text-sm mb-4">Location: ${product.location}</p>
+                        <button class="bg-indigo-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-indigo-700 transition duration-300 w-full">Add to Cart</button>
+                    </div>
+                `;
+
+                // Append to the correct category container
+                switch (product.category) {
+                    case 'electronics':
+                        electronicsContainer.insertAdjacentHTML('beforeend', productCardHtml);
+                        break;
+                    case 'home-appliances':
+                        homeAppliancesContainer.insertAdjacentHTML('beforeend', productCardHtml);
+                        break;
+                    case 'fashion':
+                        fashionContainer.insertAdjacentHTML('beforeend', productCardHtml);
+                        break;
+                    case 'accessories':
+                        accessoriesContainer.insertAdjacentHTML('beforeend', productCardHtml);
+                        break;
+                    case 'kids':
+                        kidsContainer.insertAdjacentHTML('beforeend', productCardHtml);
+                        break;
+                    case 'books':
+                        booksContainer.insertAdjacentHTML('beforeend', productCardHtml);
+                        break;
+                }
+            });
+        }
+
+        // Render products on page load
+        document.addEventListener('DOMContentLoaded', renderProducts);
+    </script>
+</body>
+</html>
